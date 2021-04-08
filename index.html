@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    <link href="jqueryUi1.12.1.Custom/jqueryUi.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="loading">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Loading</span>
+    </div>
+    <main class="mainHide">
+        <section class="topSection">
+            <div class="sideWeather">
+                <div class="sideSection" aria-live="polite">
+                    <div class="currentWeatherCircle">
+                        <h1>Current Weather</h1>
+                        <ul class="currentWeather"></ul>
+                    </div>
+                    <div class="hourlyWeather"></div>
+                </div>
+            </div>
+            <div class="cityAndQuote">
+                <div class="errorWeatherAPI"></div>
+                <div class="citySearch">
+                    <h2>Toronto, CA</h2>
+                    <div class="hideShowForm" id="showHideForm">
+                        <button>
+                            <p>Find your city</p>
+                            <figure>
+                                <img src="./styles/assets/search.png" title="Find Your City" aria-hidden="true">
+                            </figure>
+                        </button>
+                    </div>
+                </div>
+                <form action="#" method="#" name="form" class="ui-widget">
+                    <label for="userInput" class="srOnly">Search By City</label>
+                    <input type="text" class="cityName" id="userInput" name="cityField" placeholder="Search By City">
+                    <button class="submitUserCity" id="submit" type="submit">Submit</button>
+                </form>
+                <div class="errorMessage"></div>
+                <div class="quotes"></div>
+            </div>
+        </section>
+        <section class="bottomSection" aria-live="polite">
+            <div class="wrapper bottomWeather"></div>
+        </section>
+    </main>
+    <script type="text/javascript" src="cityList.json"></script>
+    <script src='https://code.jquery.com/jquery-3.5.1.js'
+        integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+    <script src="jqueryUi1.12.1.Custom/external/jquery/jquery.js"></script>
+    <script src="jqueryUi1.12.1.Custom/jqueryUi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

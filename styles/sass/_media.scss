@@ -1,0 +1,193 @@
+@media (max-width: 1266px) {
+    // Top section left part
+    .sideWeather {
+        width: 47%
+    }
+
+    .sideSection{
+        margin-left: 10%;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .cityAndQuote {
+        min-width: 0;
+        margin-right: 5%;
+        width: 53%;
+    }
+
+    // City name
+    .cityAndQuote h2 {
+        font-size: 2.8rem;
+    }
+
+    // Bottom Section
+    .bottomWeather {
+        flex-wrap: wrap;
+    }
+
+    .bottomSection ul {
+        width: 105px;
+        height: 150px;
+        border-radius: 0;
+    }
+
+    .dailyBottom {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 950px) {
+    //Bottom Section
+    .bottomSection ul {
+        width: 160px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 860px) {
+    // Top section 
+    .topSection {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .sideWeather {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    // City and quotes
+    .cityAndQuote {
+        width: 100%;
+        margin: 0;
+        background-color: $quanternaryTransperentDark;
+        padding: 0;
+    }
+
+    .errorMessage {
+        margin-right: 5%;
+    }
+
+    .quotes {
+        margin: 0 5%;
+        background-color: transparent;
+        padding: 10px 0;
+        font-size: 1.8rem;
+    }
+
+    .citySearch {
+        width: 100%;
+        padding-bottom: 15px;
+        min-width: 100%;
+    }
+
+    form {
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .ui-widget {
+        min-width: 290px;
+    }
+
+    .citySearch h2 {
+        margin-right: 5%;
+        background-color: transparent;
+        padding: 15px 0 5px 0;
+        font-size: 3rem;
+    }
+
+
+    .hideShowForm {
+        margin-bottom: 0;
+        margin-right: 5%;
+        padding: 0;
+        button {
+            padding: 3px;
+        }
+        p {
+            font-size: 1.8rem;
+        }
+        figure {
+            width: 25px;
+        }
+    }
+
+    // Current weather
+    .sideSection {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .currentWeatherCircle {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hourlyWeather {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .weatherByHours .flexIconDegrees {
+        width: 90%;
+    }
+
+    .weatherByHours .flexIconDegrees img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 770px) {
+    //Bottom section
+    .bottomSection ul {
+        width: 130px;
+        height: 165px;
+    }
+
+    .forecastWeather .time {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    //Current weather 
+
+    .cityAndQuote h2 {
+        font-size: 2.2rem;
+    }
+
+    .weatherByHours {
+        flex-direction: column;
+    }
+
+    .hourlyWeather {
+        justify-content: space-evenly;
+    }
+
+    .citySearch a { 
+        width: 14%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    // City search
+    .citySearch a { 
+        width: 16%;
+    }
+
+    //Current weather 
+
+    .cityAndQuote h2 {
+        font-size: 1.8rem;
+    }
+
+    .quotes {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+}

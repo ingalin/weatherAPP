@@ -1,0 +1,292 @@
+// TOP SECTION style 
+.topSection {
+    display: flex;
+    justify-content: space-between;
+    min-height: 550px;
+}
+
+//LEFT SIDE SECTION style
+.sideSection {
+    margin:0;
+    margin-left: calc(25% - 285px);
+    min-width: 285px;
+    color: $primaryFont;       
+    line-height: 22px;
+    h1{
+        letter-spacing: 1.5px;
+    }
+} 
+
+//RIGHT SIDE SECTION style
+.sideWeather {
+    background: $primaryTransperent;
+    width: calc(50% - 285px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+//CURRENT WEATHER style
+.mainCurrWeatherInfo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background:$tertiaryTransperent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $secondaryFont;
+    .currentTemp {
+        font-size: 5rem;
+    }
+}
+
+.mainCurrWeatherInfo img {
+    width: 100%;    
+}
+
+.sideCurrent {
+    margin-bottom: -25px;
+}
+
+.cloud {
+    text-transform: uppercase;
+}
+
+//HOURLY WEATHER style 
+.weatherByHours {
+    display: flex; 
+    .flexIconDegrees {
+        width: 50%;
+    }
+}
+
+.sideHourlyWeather {
+    margin-top: 15px;
+}
+
+.hours {
+    font-size: 2.2rem;
+}
+
+.currentDate {
+    font-size: 2.2rem;
+    margin-bottom: -15px;
+}
+
+.currentTempStyle span {
+    margin-left: -12px;
+}
+
+
+//CITY NAME AND QUOTES style
+.cityAndQuote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 calc(50% - 570px) 0 20px;
+    min-width: 855px;
+    padding: 20px 0 0 0;
+    margin-left: 20px;
+        h2{
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            padding: 10px;
+        }    
+}
+
+.citySearch {
+    display: flex;
+    flex-direction: column;
+    background: $secondaryTransperent;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: $primaryFont;
+    border-radius: 2px;  
+    min-width: 350px;
+    h2 {
+        text-align: right;
+    }
+}
+
+
+//form submit city and country 
+form.ui-widget{
+    display: none;
+}
+
+.ui-widget {
+    min-width: 350px;
+}
+
+form.ui-widget input[type=text]{
+    padding: 10px;
+    border: 3px $secondaryBodyDark solid;
+    float: left;
+    width: 70%;
+    line-height: 2rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: context-menu;   
+}
+
+.ui-menu {
+    min-width: 350px;
+    border-radius: 6px;
+    border: 1px solid $quanternaryTransperent;
+}
+
+.ui-menu li {
+    border-top: 1px solid $quanternaryTransperent;
+    padding: 5px;
+}
+
+form.ui-widget input[type=text]:hover,
+form.ui-widget input[type=text]:focus{
+    background: $primaryBody;
+    border-color: $secondaryBodyDark;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+}
+
+form.ui-widget button{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    line-height: 2rem;
+    background: $secondaryBodyLight;
+    border-color: $secondaryBodyDark;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+}
+
+form.ui-widget button:hover,
+form.ui-widget button:focus
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: $secondaryBodyDark;
+    border-color: $secondaryBodyDark;
+    color: $primaryBody;
+    outline: none;
+}
+
+// QUOTE style
+.quotes{
+    quotes: "“"  "„"  ;
+    background: $secondaryTransperent;
+    border-radius: 2px;     
+    color: $primaryFont;
+    margin-top: 40px;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 2rem;
+    width: 80%;
+    font-weight: 600;
+    text-align: right;
+    text-transform: uppercase;
+} 
+
+// Show/hide search city
+.hideShowForm {
+    margin-bottom: 10px;
+    padding: 5px 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: underline;
+    button {
+        background-color: transparent;
+        color: $primaryFont;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 1px solid transparent;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+    }
+    figure {
+        width: 40px;
+        margin-left: 10px;
+    }
+}
+
+.hideShowForm button:hover, .hideShowForm button:focus {
+    border: $secondaryBodyLight 1px solid;
+}
+
+
+// ERRORS MESSAGES style
+// error msg for missing input city and country
+.errorMessage {
+    background: $primaryWarning;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 4px;
+    p{
+        padding: 10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+}
+
+// error msg for API request failing
+.errorAPIMessage{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: $quanternaryTransperentDark;
+    top: 0;
+    left: 0;
+}
+
+.messageErrorBox{
+    position: absolute;
+    margin: 0 auto;
+    background:  $tertiaryTransperent;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    min-height: 200px;
+    top:35%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+    img {
+        margin: 0 auto;
+        width: 100px;
+        margin-bottom: 10px;
+    }
+}
+
+.messageErrorBox p {
+        padding: 10px 0;
+    }
+
+.messageErrorBox a {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 10px;
+        background: $primaryBody;
+        border-radius: 5px;
+        border: 2px solid $primaryBody;
+    }
+
+.messageErrorBox a:hover, a:focus {
+        background:$secondaryBodyBright;
+        border: 2px solid $secondaryBodyDark;
+        cursor: pointer;
+    }
+

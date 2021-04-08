@@ -1,0 +1,97 @@
+// BOTTOM SECTION style
+.bottomSection {
+    background: $primaryTransperent;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    ul {
+        width: 130px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50%;
+        background-color:$tertiaryTransperent;
+    }
+}
+
+.bottomWeather {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.currentTemp {
+    font-size: 2.8rem;
+}
+
+.flexIconDegrees {
+    display: flex;
+    width: 100%;
+}
+
+.currentTemp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span {
+        display: block;
+    }
+}
+
+.time {
+    text-align: center;
+}
+
+.cloudIcon {
+    margin-left: -5px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    img {
+        max-width: 110px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+// Extra daily info 
+ul.extraInfo {
+    border-radius: 0;
+    font-size: 1.6rem;
+    height: 150px;
+    padding: 5px;
+}
+
+.extraInfoDaily {
+    margin-top: -8px;
+}
+
+.extraInfo .time {
+    margin-bottom: -10px;
+}
+
+.extraWeatherInfo {
+    text-align: left;
+}
+
+.moreInfo {
+    text-align: center;
+}
+
+button.moreWeatherInfoButton {
+    height: 150px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    margin: 10px 0;
+}
+
+button.moreWeatherInfoButton:hover ul, button.moreWeatherInfoButton:focus ul{
+    background: $quanternaryTransperent;
+    color: $primaryFont;
+}

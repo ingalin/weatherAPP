@@ -1,0 +1,1086 @@
+@charset "UTF-8";
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  border: 3px transparent solid;
+  display: block;
+}
+
+button:hover, input:hover, input:focus {
+  border: 3px white solid;
+  color: white;
+}
+
+button:focus {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  min-height: 100vh;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+figure {
+  margin: 0;
+}
+
+.mainHide {
+  display: none;
+}
+
+.loading {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(24, 82, 139, 0.8);
+  left: 15%;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-animation: circle .5s alternate infinite ease;
+          animation: circle .5s alternate infinite ease;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    -webkit-transform: scaleX(1.7);
+            transform: scaleX(1.7);
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    -webkit-transform: scaleX(1.7);
+            transform: scaleX(1.7);
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.circle:nth-child(2) {
+  left: 45%;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(43, 45, 66, 0.8);
+  position: absolute;
+  top: 62px;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-animation: shadow .5s alternate infinite ease;
+          animation: shadow .5s alternate infinite ease;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    -webkit-transform: scaleX(1.5);
+            transform: scaleX(1.5);
+  }
+  40% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: .7;
+  }
+  100% {
+    -webkit-transform: scaleX(0.2);
+            transform: scaleX(0.2);
+    opacity: .4;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    -webkit-transform: scaleX(1.5);
+            transform: scaleX(1.5);
+  }
+  40% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: .7;
+  }
+  100% {
+    -webkit-transform: scaleX(0.2);
+            transform: scaleX(0.2);
+    opacity: .4;
+  }
+}
+
+.shadow:nth-child(4) {
+  left: 45%;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.loading span {
+  position: absolute;
+  top: 75px;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 6.5px;
+  color: #74561e;
+  left: 15%;
+}
+
+.topSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 550px;
+}
+
+.sideSection {
+  margin: 0;
+  margin-left: calc(25% - 285px);
+  min-width: 285px;
+  color: #ffffff;
+  line-height: 22px;
+}
+
+.sideSection h1 {
+  letter-spacing: 1.5px;
+}
+
+.sideWeather {
+  background: rgba(43, 45, 66, 0.8);
+  width: calc(50% - 285px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mainCurrWeatherInfo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.mainCurrWeatherInfo .currentTemp {
+  font-size: 5rem;
+}
+
+.mainCurrWeatherInfo img {
+  width: 100%;
+}
+
+.sideCurrent {
+  margin-bottom: -25px;
+}
+
+.cloud {
+  text-transform: uppercase;
+}
+
+.weatherByHours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.weatherByHours .flexIconDegrees {
+  width: 50%;
+}
+
+.sideHourlyWeather {
+  margin-top: 15px;
+}
+
+.hours {
+  font-size: 2.2rem;
+}
+
+.currentDate {
+  font-size: 2.2rem;
+  margin-bottom: -15px;
+}
+
+.currentTempStyle span {
+  margin-left: -12px;
+}
+
+.cityAndQuote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 calc(50% - 570px) 0 20px;
+  min-width: 855px;
+  padding: 20px 0 0 0;
+  margin-left: 20px;
+}
+
+.cityAndQuote h2 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+.citySearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(24, 82, 139, 0.8);
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  border-radius: 2px;
+  min-width: 350px;
+}
+
+.citySearch h2 {
+  text-align: right;
+}
+
+form.ui-widget {
+  display: none;
+}
+
+.ui-widget {
+  min-width: 350px;
+}
+
+form.ui-widget input[type=text] {
+  padding: 10px;
+  border: 3px #18548B solid;
+  float: left;
+  width: 70%;
+  line-height: 2rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: context-menu;
+}
+
+.ui-menu {
+  min-width: 350px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 165, 0, 0.5);
+}
+
+.ui-menu li {
+  border-top: 1px solid rgba(255, 165, 0, 0.5);
+  padding: 5px;
+}
+
+form.ui-widget input[type=text]:hover,
+form.ui-widget input[type=text]:focus {
+  background: #ffa500;
+  border-color: #18548B;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+}
+
+form.ui-widget button {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  line-height: 2rem;
+  background: #91c0f8;
+  border-color: #18548B;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+}
+
+form.ui-widget button:hover,
+form.ui-widget button:focus {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #18548B;
+  border-color: #18548B;
+  color: #ffa500;
+  outline: none;
+}
+
+.quotes {
+  quotes: "“"  "„";
+  background: rgba(24, 82, 139, 0.8);
+  border-radius: 2px;
+  color: #ffffff;
+  margin-top: 40px;
+  padding: 20px;
+  margin-top: auto;
+  font-size: 2rem;
+  width: 80%;
+  font-weight: 600;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.hideShowForm {
+  margin-bottom: 10px;
+  padding: 5px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: underline;
+}
+
+.hideShowForm button {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hideShowForm figure {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.hideShowForm button:hover, .hideShowForm button:focus {
+  border: #91c0f8 1px solid;
+}
+
+.errorMessage {
+  background: #fb3640;
+  width: 300px;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.errorMessage p {
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.errorAPIMessage {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(39, 39, 39, 0.9);
+  top: 0;
+  left: 0;
+}
+
+.messageErrorBox {
+  position: absolute;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  min-height: 200px;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.messageErrorBox img {
+  margin: 0 auto;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.messageErrorBox p {
+  padding: 10px 0;
+}
+
+.messageErrorBox a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px;
+  background: #ffa500;
+  border-radius: 5px;
+  border: 2px solid #ffa500;
+}
+
+.messageErrorBox a:hover, a:focus {
+  background: #ffff00;
+  border: 2px solid #18548B;
+  cursor: pointer;
+}
+
+.bottomSection {
+  background: rgba(43, 45, 66, 0.8);
+  min-height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottomSection ul {
+  width: 130px;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bottomWeather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+
+.currentTemp {
+  font-size: 2.8rem;
+}
+
+.flexIconDegrees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.currentTemp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.currentTemp span {
+  display: block;
+}
+
+.time {
+  text-align: center;
+}
+
+.cloudIcon {
+  margin-left: -5px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cloudIcon img {
+  max-width: 110px;
+}
+
+.hide {
+  display: none;
+}
+
+ul.extraInfo {
+  border-radius: 0;
+  font-size: 1.6rem;
+  height: 150px;
+  padding: 5px;
+}
+
+.extraInfoDaily {
+  margin-top: -8px;
+}
+
+.extraInfo .time {
+  margin-bottom: -10px;
+}
+
+.extraWeatherInfo {
+  text-align: left;
+}
+
+.moreInfo {
+  text-align: center;
+}
+
+button.moreWeatherInfoButton {
+  height: 150px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin: 10px 0;
+}
+
+button.moreWeatherInfoButton:hover ul, button.moreWeatherInfoButton:focus ul {
+  background: rgba(255, 165, 0, 0.5);
+  color: #ffffff;
+}
+
+@media (max-width: 1266px) {
+  .sideWeather {
+    width: 47%;
+  }
+  .sideSection {
+    margin-left: 10%;
+    width: 100%;
+    min-width: 0;
+  }
+  .cityAndQuote {
+    min-width: 0;
+    margin-right: 5%;
+    width: 53%;
+  }
+  .cityAndQuote h2 {
+    font-size: 2.8rem;
+  }
+  .bottomWeather {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bottomSection ul {
+    width: 105px;
+    height: 150px;
+    border-radius: 0;
+  }
+  .dailyBottom {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .bottomSection ul {
+    width: 160px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 860px) {
+  .topSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .sideWeather {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .cityAndQuote {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(39, 39, 39, 0.9);
+    padding: 0;
+  }
+  .errorMessage {
+    margin-right: 5%;
+  }
+  .quotes {
+    margin: 0 5%;
+    background-color: transparent;
+    padding: 10px 0;
+    font-size: 1.8rem;
+  }
+  .citySearch {
+    width: 100%;
+    padding-bottom: 15px;
+    min-width: 100%;
+  }
+  form {
+    margin: 0 5%;
+    width: 90%;
+  }
+  .ui-widget {
+    min-width: 290px;
+  }
+  .citySearch h2 {
+    margin-right: 5%;
+    background-color: transparent;
+    padding: 15px 0 5px 0;
+    font-size: 3rem;
+  }
+  .hideShowForm {
+    margin-bottom: 0;
+    margin-right: 5%;
+    padding: 0;
+  }
+  .hideShowForm button {
+    padding: 3px;
+  }
+  .hideShowForm p {
+    font-size: 1.8rem;
+  }
+  .hideShowForm figure {
+    width: 25px;
+  }
+  .sideSection {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .currentWeatherCircle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hourlyWeather {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .weatherByHours .flexIconDegrees {
+    width: 90%;
+  }
+  .weatherByHours .flexIconDegrees img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .bottomSection ul {
+    width: 130px;
+    height: 165px;
+  }
+  .forecastWeather .time {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .cityAndQuote h2 {
+    font-size: 2.2rem;
+  }
+  .weatherByHours {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hourlyWeather {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .citySearch a {
+    width: 14%;
+  }
+}
+
+@media (max-width: 450px) {
+  .citySearch a {
+    width: 16%;
+  }
+  .cityAndQuote h2 {
+    font-size: 1.8rem;
+  }
+  .quotes {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+}
