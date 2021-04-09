@@ -89,6 +89,7 @@ button.moreWeatherInfoButton {
     cursor: pointer;
     border: none;
     margin: 10px 0;
+    outline: none;
 }
 
 button.moreWeatherInfoButton:hover ul, button.moreWeatherInfoButton:focus ul{

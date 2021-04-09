@@ -3,6 +3,12 @@
     display: flex;
     justify-content: space-between;
     min-height: 550px;
+    button figure {
+        max-height: 100%;
+    }
+    button img {
+        width: 100%;
+    }
 }
 
 //LEFT SIDE SECTION style
